@@ -37,19 +37,42 @@ h3 {
 .phone-parent-open{
   height: 200px;
 }
+.hamburger{
+  display: none;
+}
 @media (max-width: 850px){
   .desktop-parent{
     display: none;
   }
   .phone-parent{
-    display: block;
-    color: white;
-    position: relative;
+    position: absolute;
     top: 10vh;
+    height: 0;
+    width: 120px;
     background-color: #212529;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow-y: hidden;
+  }
+  .phone-parent-open{
+    height: 200px;
+  }
+  .phone-child{
+    color: white;
     list-style-type: none;
+    margin-right: 30px;
   }
   header{
     background-color: #212529;
+  }
+  .hamburger{
+    display: block;
+    height: 50px;
+    position: absolute;
+    right: 10%;
+
   }
 }

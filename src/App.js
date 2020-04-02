@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 
-class App extends Component() {
+class App extends Component {
   constructor(){
     super()
     this.state ={
@@ -30,7 +30,7 @@ class App extends Component() {
         <img 
         onClick={this.toggleMobileMenu}
         className="hamburger"
-        src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fb%2Fb2%2FHamburger_icon.svg%2F1200px-Hamburger_icon.svg.png&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHamburger_button&tbnid=BqxWBiHkEOlgpM&vet=12ahUKEwj1sdndp8joAhUTiJ4KHb5FDxkQMygAegUIARCeAg..i&docid=CXa0WlIhS1elWM&w=1200&h=1200&q=hamburger%20menu&ved=2ahUKEwj1sdndp8joAhUTiJ4KHb5FDxkQMygAegUIARCeAg"/>
+        src="https://cdn4.iconfinder.com/data/icons/navigation-40/24/hamburger-menu-512.png" alt="hamburger"/>
         <ul className={`phone-parent ${this.state.mobileMenuOpen ? 'phone-parent-open' : null}`}>
           <li className="phone-child">SERVICES</li>
           <li className="phone-child">PORTFOLIO</li>
